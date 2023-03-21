@@ -155,7 +155,7 @@ def main():
             for left in subsets(available_pegs_left, i):
                 for right in subsets(available_pegs_right, j):
                     if is_solution(left.copy(), right.copy()):
-                        print(list(left), list(right))
+                        print(f'Left: {list(left)}, Right: {list(right)}')
 
 
 if __name__ == '__main__':
